@@ -60,15 +60,15 @@ Once an element is selected a property determines the styles that will be applie
 
 Example:
 
-  p {
-    color: ...;
-    font-size: ...;
-  }
+    p {
+      color: ...;
+      font-size: ...;
+    }
 
 #### Values
 So far, we've selected an element with a selector and determined what style we'd like to apply with a property. Now, we can determine the behavior of that property with a value.
 
-  p {
-    color: orange;
-    font-size: 16px;
-  }
+    p {
+      color: orange;
+      font-size: 16px;
+    }
