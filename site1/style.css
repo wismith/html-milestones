@@ -1,0 +1,63 @@
+header {
+  background-color: lightblue;
+}
+header h1 {
+  color: navy;
+  border: 3px double red;
+  border-radius: 10px;
+}
+
+header h2, h3, h4 {
+  color: red;
+  margin: 5px;
+}
+
+section {
+  margin: 0 1.5%;
+  width: 63%;
+  float: left;
+  background-color: lightblue;
+  /* display: inline-block; */
+}
+
+aside {
+  margin: 0, 1.5%;
+  width: 30%;
+  background-color: lightblue;
+  float: right;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+.container {
+  margin: 4 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+}
+
+.hero {
+  padding: 22px, 80px, 66px, 80px;
+}
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-alt {
+  border: 1px solid red;
+  padding: 10px 30px;
+}
+
+footer {
+  clear: both;
+}
