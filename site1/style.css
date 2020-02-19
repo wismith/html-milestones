@@ -1,0 +1,71 @@
+header {
+  background-color: lightblue;
+  position: relative;
+  border-radius: 20px;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  padding: .25%;
+  margin: 1% auto;
+  width: 50%;
+  align-self: center;
+}
+
+
+section {
+  margin: 1%;
+  width: 60%;
+  float: left;
+  border-radius: 20px;
+  background-color: lightblue;
+  text-align: center;
+  padding: .45%;
+  /* display: inline-block; */
+}
+
+aside {
+  margin: 1%;
+  border-radius: 20px;
+  width: 30%;
+  text-align: center;
+  background-color: lightblue;
+  float: right;
+}
+
+aside ul {
+  text-align: left;
+  display: inline-block;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+  text-align: start;
+}
+
+
+.container {
+  margin: 4 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+}
+
+.hero {
+  padding: 22px, 80px, 66px, 80px;
+}
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-alt {
+  border: 1px solid red;
+  padding: 10px 30px;
+}
+
+footer {
+  clear: both;
+}
