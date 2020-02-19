@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-color: bisque;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  background: rgb(58, 35, 8);
+  background-size: cover;
+  color: white;
+}
+a {
+  color: white;
+}
+
+ul {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+h1, h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  font-variant: initial;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+section {
+  display: block;
+  float: left;
+  margin-left: 5%
+}
