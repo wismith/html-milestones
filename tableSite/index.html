@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Using Tables</title>
+</head>
+<body>
+  <header>
+    <h1>See the rendered tables below:</h1>
+  </header>
+  <section id="tables">
+    <script>
+      const addTable = (title, heading1, heading2, array1, array2) => {
+        let headingRow = `
+        <tr>
+        <th>${heading1}</th>
+        <th>${heading2}</th>
+        </tr>
+        `;
+
+        let rows = [];
+        for (let i = 0; i < array1.length; i++) {
+          rows.push(`<tr>
+              <td>${array1[i]}</td>
+              <td>${array2[i]}</td>
+            </tr>`);
+        }
+
+        document.getElementById('tables').innerHTML += `
+        <section>
+          <h2>${title}</h2>
+          <table>
+          ${headingRow}
+          ${rows.join('\n')}
+          </table>
+        </section>
+        `
+      }
+    </script>
+    <section id="table1">
+      <h2>Groceries</h2>
+      <table>
+        <tr>
+          <th>Breakfast</th>
+          <td>Eggs</td>
+          <td>Bacon</td>
+          <td>Toast</td>
+          <td>Orange Juice</td>
+          <td>Coffee</td>
+        </tr>
+        <tr>
+          <th>Lunch</th>
+          <td>Sandwich bread</td>
+          <td>Deli meat</td>
+          <td>Lettuce and tomato</td>
+          <td>Pretzels</td>
+          <td>Hummus</td>
+        </tr>
+        <tr>
+          <th>Dinner</th>
+          <td>Potatoes</td>
+          <td>Pork tenderloin</td>
+          <td>Broccoli</td>
+          <td>Rosemary bread</td>
+          <td>Irish butter</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="table2">
+      <h2>Other version of the grocery list:</h2>
+      <table>
+        <tr class="headers">
+          <th>Breakfast</th>
+          <th>Lunch</th>
+          <th>Dinner</th>
+        </tr>
+        <tr>
+          <td>Eggs</td>
+          <td>Sandwich Bread</td>
+          <td>Pork tenderloin</td>
+        </tr>
+        <tr>
+          <td>Bacon</td>
+          <td>Deli Meat</td>
+          <td>Potatoes</td>
+        </tr>
+        <tr>
+          <td>Toast</td>
+          <td>Lettuce and tomatoes</td>
+          <td>Broccoli</td>
+        </tr>
+        <tr>
+          <td>Coffee</td>
+          <td>Pretzels</td>
+          <td>Rosemary bread</td>
+        </tr>
+        <tr>
+          <td>Orange Juice</td>
+          <td>Hummus</td>
+          <td>Irish butter</td>
+        </tr>
+      </table>
+    </section>
+    <script>
+      addTable('Meal Times - Dynamically created with script', 'Meal', 'Time', ['Breakfast', 'Lunch', 'Dinner'], ['7:00', '12:00', '7:30']);
+    </script>
+  </section>
+
+</body>
+</html>
