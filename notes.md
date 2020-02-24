@@ -1,6 +1,6 @@
 
 ## HTML
-
+See [Shay Howe](https://learn.shayhowe.com/html-css/building-your-first-web-page/) for these notes.
 #### Elements:
 Elements are designators that define the structure and content of objects within a page.
 - Heading levels
